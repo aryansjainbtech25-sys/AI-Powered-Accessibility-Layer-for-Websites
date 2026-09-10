@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "StudyLens",
+  "version": "1.0.0",
+  "description": "AI-powered accessibility assistant for NCERT",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
